@@ -1,0 +1,24 @@
+<h2>Login</h2>
+<%= flash[:notice] %>
+<%= form_for(:user) do |f| %>
+
+    <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <br />
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.password_field :password %>
+  </div>
+<br />
+  <div class="actions">
+    <%= f.submit "Login"%>
+  </div>
+<% end %>
+<br /><br />
+
+<a href="/password/forget_password">Have you forgot your password?</a> |
+<a href="/account/signup">New User? Signup here..</a>
+
+
